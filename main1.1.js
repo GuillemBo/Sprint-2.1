@@ -18,8 +18,7 @@ class Person {
         return this._name
     }
 
-    greet = () => {console.log(`Hola ${this.name}`)}
-        
+    greet = () => {console.log(`Hola ${this.name}`)}      
 }
 
 console.log(randomNumber())

@@ -40,7 +40,6 @@ for (const property in obj) {
 for (let value of numeros) {
     console.log(value)
     if (value == 5) break;
-
 }
 
 //Nivell 3

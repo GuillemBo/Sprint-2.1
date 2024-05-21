@@ -28,7 +28,6 @@ claculadora(5, 2, sumaNums)
 function esperarISaludar(nom, callback) {
 
     setTimeout(() => {callback(nom)}, 2000)
-
 }
 
 function saludar (nom) {
@@ -62,10 +61,7 @@ processarElements(array, imprimirElement)
 
 
 function processarCadena(cadena, callback) {
-     
-
     callback(cadena)
-
 }
 
 function imprCadenaMayus(cadena) {

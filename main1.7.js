@@ -11,7 +11,6 @@ const myPromise = new Promise((resolve) => {
     setTimeout(() => {
         resolve("Hola, mon!");
     }, 2000);
-
 })
 
 
@@ -19,11 +18,10 @@ const myPromise = new Promise((resolve) => {
 
 
 const myPromise2 = new Promise((resolve) => {
-
+    
     setTimeout(() => {
         resolve("Hola, mon!");
     }, 2000);
-
 })
 
 myPromise2.then(message => console.log(message))
@@ -47,7 +45,7 @@ const promesa = new Promise((resolve, reject) => {
 promesa.then(() => console.log("Promise solved"))
 
 
-//Exercici 4
+//Exercici 4 & 5
 
 async function funcioAsincrona() {
 
@@ -63,11 +61,25 @@ funcioAsincrona()
 
 
 
-//Nivell 2
+//Nivell 3
 
-//Exercici 5
+//Exercici 6
 
 
-// const promesa1 = new Promise((resolve, reject) => {
+let correcto = true
+let incorrecto = false
 
-// })
+const promesa1 = new Promise((resolve) => {
+    setTimeout(() => {
+        resolve(correcto)
+    }, 2000)
+})
+
+const promesa2 = new Promise((resolve) => {
+    setTimeout(() => {
+        resolve(incorrecto)
+    }, 3000)
+})
+
+Promise.all([promesa1, promesa2]).then(() => {console.log(correcto, incorrecto)})
+
